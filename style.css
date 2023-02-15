@@ -1,0 +1,128 @@
+
+body{
+    --main-color: #1313b9bc;
+    --success-color:green;
+    --light-color: #eee;
+     margin: 0;
+     font-family: 'Montserrat', sans-serif;
+}
+.nav-main{
+   position: relative;
+   line-height: 1em;
+   top:3em;
+   padding: 1em;
+   visibility: hidden;
+
+  
+}
+.nav-contacts{
+    position: absolute;
+    line-height: 1em;
+    top:0;
+    padding: 1em 1em;
+/*  border-bottom: 3px solid var(--main-color);*/
+    text-align: center;
+
+    box-sizing: border-box;
+    padding: 1em 1em;
+    width: 100%;
+    background-color: var(--main-color);
+
+}
+.nav-contacts a{
+    text-decoration: none;
+    display: inline-block;
+    color:var(--light-color);
+    
+}
+.nav-contacts_email{
+   font-weight: 600;
+   float: left;
+   display: inline-block;
+}
+.nav-contacts_email i{
+    float: left;
+    position: relative;
+    margin-left:0.5em;
+    font-size: 2em;
+ 
+   
+}
+.nav-contacts_phone{
+    font-weight: 900;
+    
+    position: absolute;
+    top: calc(100vh - 5em);
+    left: 0;
+    right: 0;
+    /*background-color: red;*/
+    padding: 1em;
+}
+.nav-contacts_phone i{
+    font-size: 2em;
+    margin-right: 1em;
+    background-color: var(--success-color);
+    padding: 0.5em;
+    border-radius: 100%;
+    color: var(--light-color);
+   
+}
+.nav-contacts_phone span{
+    position: relative;
+    top: -0.4em;
+    color: var;
+    color: green;
+}
+.nav-contacts_socials{
+    float: right;
+}
+
+
+.nav-contacts_email i{
+    display: none;
+}
+
+@media (max-width:470px){
+    .nav-contacts_email i{
+      display: inline-block;
+    }
+
+}
+
+@media (max-width:470px){
+    .nav-contacts_email span{
+        display: none;
+       
+    }
+}
+
+@media (min-width: 1280px),(hover:hover) {
+    .nav-contacts_phone{
+        position: relative;
+        top: 0;
+        padding: 0;
+    }
+    .nav-contacts_phone i{
+        color: var(--main-color);
+        background: var(--light-color);
+    }
+    .nav-contacts_phone span{
+        color: var(--light-color);
+     
+    }
+    .nav-contacts_email,
+    .nav-contacts_socials{
+        margin-top: 1.2em;
+    }
+}
+@media (min-width: 1366px){
+    .nav-contacts{
+        padding: 1em 3em;
+    }
+}
+@media (min-width: 1600px){
+    .nav-contacts {
+        padding: 5em;
+    }
+}
+
